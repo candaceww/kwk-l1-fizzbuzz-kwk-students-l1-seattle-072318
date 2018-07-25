@@ -1,4 +1,6 @@
-def fizzbuzz(int=3)
+def fizzbuzz(int)
+  puts "Please type in any number"
+  int=gets.strip
   if (int % 3 == 0) && (int % 5==0)
    "FizzBuzz"
     elsif int % 5 == 0
@@ -7,4 +9,4 @@ def fizzbuzz(int=3)
     "Fizz"
   end
 end 
-puts fizzbuzz
+fizzbuzz(int)
